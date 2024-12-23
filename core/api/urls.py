@@ -3,5 +3,6 @@ from expense import views
 
 
 urlpatterns = [
-    path('get-transactions/', views.get_transactions)
+    path('get-transactions/', views.get_transactions),
+    path('transaction/', views.TransactionAPI.as_view())
 ]
